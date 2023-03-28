@@ -49,6 +49,8 @@ header nav a {
 }
 header nav a:hover {
     text-decoration: darkgrey;
+    border-style: solid;
+    border-color: black;
 }
 
 #main-banner {
@@ -133,7 +135,8 @@ header nav a:hover {
   .kitchen-design-columns {
     display: flex;
     flex-wrap: wrap;
-    height: 90rem
+    height: 90rem;
+    margin-top: 20rem;
   }
   
   .kitchen-column {
@@ -161,13 +164,68 @@ header nav a:hover {
     margin-left: 2rem;
   }
 
+  #team-section {
+    width: 95%;
+    height: 80rem;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem 1rem;
+    margin-bottom: 20rem;
+    max-width: 95%;
+    color: white;
+    background-color: rgb(32, 33, 33);
+    border-radius: 1.5rem;
+    box-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.1),
+      4px 4px 8px rgba(0, 0, 0, 0.1),
+      8px 8px 16px rgba(0, 0, 0, 0.1),
+      16px 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .team-member {
+    width: 18rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .team-member figure {
+    margin-bottom: 1rem;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 0.25rem solid #f9f9f9;
+    box-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.1),
+      4px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-det {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+
   .form-container {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30rem;
   }
   
   form {
@@ -177,14 +235,14 @@ header nav a:hover {
   }
   
   label {
-    font-size: 24px;
+    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
   }
   
-  textarea, input[type="email"], input[type="tel"] {
-    font-size: 20px;
+  textarea, input[type="text"], input[type="email"], input[type="tel"] {
+    font-size: 50px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -204,7 +262,7 @@ header nav a:hover {
   input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
