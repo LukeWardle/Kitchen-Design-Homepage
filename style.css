@@ -7,32 +7,34 @@ body {
 }
 
 header {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
   position: sticky; top: 0;
 }
 
+header #company-logo {
+  height: 
+}
+
+header .navigation-item {
+  display: inline;
+  flex-direction: row;
+}
+
+header .navigation-item ul {
+  display: inline-block;
+  text-align: center;
+}
+
 header .top-banner {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   padding-left: 2rem;
   padding-right: 1.5rem;
   margin: auto;
   width: 100%;
 }
 
-header nav ul {
-  padding: auto;
-  height: 100%;
-  display: flex;
-  font-size: 3rem;
-  justify-content: center;
-  align-items: center;
-
-}
 
 header nav li {
   display: inline-block;
