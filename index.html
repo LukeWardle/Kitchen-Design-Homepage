@@ -1,157 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Kreon:wght@700&family=Nunito+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-        <title>Luke's Kitchen Design.</title>
-    </head>
-    <body>
-        <header>
-            <div class="top-banner">
-                <a href="#" id="company-logo">
-                  <img src="./images/KitchenDesignLogo.png" alt="Luke's Kitchen Design Logo" />
-                </a>
-                <nav class="navigation-items">
-                    <ul>
-                        <li><a href="#">Kitchens</li>
-                        <li><a href="#">Other Rooms</a></li>
-                        <li><a href="#">Why Choose Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div id="main-banner">
-            <div class="browse-kitchen-container">
-                <div class="browse-kitchen-main-link">
-                    <a href="#">Browse Our Kitchens</a>
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H & H Interiors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="./images/houseandhomelogo-white.png" alt="House & Home logo">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="hero">
+      <h1>Welcome to Our Kitchen Design Website</h1>
+      <p>We are a professional kitchen design business specializing in custom kitchens, kitchen remodels, and kitchen renovations. Browse our portfolio to see some of our recent work.</p>
+      <a href="#" class="btn">View Portfolio</a>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom Kitchen Design</li>
+        <li>Kitchen Remodels</li>
+        <li>Kitchen Renovations</li>
+        <li>3D Renderings</li>
+      </ul>
+    </section>
+    <section id="portfolio">
+      <h2>Our Portfolio</h2>
+      <div class="gallery">
+        <img src="images/kitchen-1.jpg" alt="Kitchen 1">
+        <img src="images/kitchen-2.jpg" alt="Kitchen 2">
+        <img src="images/kitchen-3.jpg" alt="Kitchen 3">
+        <img src="images/kitchen-4.jpg" alt="Kitchen 4">
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <blockquote>
+        <p>"We are absolutely thrilled with our new kitchen design! The team at Kitchen Design Company did an amazing job from start to finish."</p>
+        <cite>- John and Jane Smith</cite>
+      </blockquote>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
         </div>
-
-        <div class="kitchen-design-section">
-            <h2>View some of our previous designs</h2>
-            <p>Each of our designs are unique, based upon our customers space and demands.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
         </div>
-
-        <div class="advertising-banner">
-            <div class="advertisements">
-                <h3>|  British craftmanship</h3>
-            </div>
-            <div class="advertisements">
-                <h3>|  Designs tailored to you.</h3>
-            </div>
-            <div class="advertisements">
-                <h3>|  Professionalism.</h3>
-            </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
         </div>
-
-        <div class="kitchen-design-columns">
-            <div class="kitchen-column">
-                <img src="./images/Dark_Blue_Kitchen_With_Island.webp" alt="Dark Blue Kitchen">
-                <h3>Blue Kitchen</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="kitchen-column">
-                <img src="./images/White_Kitchen.jpg" alt="White Kitchen">
-                <h3>White Kitchen</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="kitchen-column">
-                <img src="./images/Ultra_Sleek_Kitchen.jpg" alt="Modern Design Kitchen">
-                <h3>Modern Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-          </div>
-
-          <div id="team-section">
-            <h2>Meet The Team</h2>
-            <div class="team-container">
-              <div class="team-member">
-                <figure>
-                  <img src='#'/>
-                </figure>
-                <div class="team-det">
-                  <h5>Team Member 1</h5>
-                  <p>designer</p>
-                </div>
-              </div>
-              <div class="team-member">
-                <figure>
-                  <img src='#'/>
-                </figure>
-                <div class="team-det">
-                  <h5>Team Member 2</h5>
-                  <p>Designer</p>
-                </div>
-              </div>
-              <div class="team-member">
-                <figure>
-                  <img src='#'/>
-                </figure>
-                <div class="team-det">
-                  <h5>Team Member 3</h5>
-                  <p>Designer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-container">
-            <form>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-          
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="phone">Phone number:</label>
-              <input type="tel" id="phone" name="phone" required>
-          
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="10" cols="50" required></textarea>
-          
-              <input type="submit" value="Send">
-            </form>
-          </div>
-
-        <footer>
-            <div class="contact">
-              <h4>Luke's Kitchen Design</h4>
-              <p>l.wardle@live.co.uk</p>
-              <p>+44**********</p>
-            </div>
-            <div class="copyright">
-              <p>Luke Wardle: Copyright 2023</p>
-            </div>
-        </footer>
-        
-    </body>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>    
+  </main>
+  <footer>
+    <p>&copy; 2023 H & H Interiors</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
 </html>
