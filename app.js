@@ -1,37 +1,10 @@
-// Smooth scrolling
-$('a[href*="#"]').on('click', function (e) {
-    e.preventDefault();
-    
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
-  });
-  
-  // Testimonials slider
-  $('.slider').slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-  });
-  
-  // Contact form submission
-  $('#contact-form').submit(function (e) {
-    e.preventDefault();
-  
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var message = $('#message').val();
-  
-    $.ajax({
-      url: 'submit-form.php',
-      type: 'POST',
-      data: {name: name, email: email, message: message},
-      success: function (response) {
-        $('#form-feedback').html(response);
-      }
-    });
-  });
-  
+window.onload = function() {
+  let currentImageIndex = 0;
+  const images = document.querySelectorAll('.carousel-image');
+
+  setInterval(() => {
+      images[currentImageIndex].style.display = 'none';
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].style.display = 'block';
+  }, 5000); // Change image every 3 seconds
+}

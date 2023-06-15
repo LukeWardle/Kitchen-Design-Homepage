@@ -14,95 +14,92 @@ body {
 
 /* Header styles */
 header {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  text-align: center;
+}
+
+.logo-container {
+  display: inline-block;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.logo {
+  width: auto; /* Adjust as needed */
+  height: 60px;
+}
+
+.company-name {
+  font-size: 2em; /* Adjust as needed */
+  font-family: 'Amatic SC', cursive;
+}
+
+header h2 {
+  font-family: 'Handlee', cursive;
+}
+
+nav {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.nav-link-container {
+  background-color: white;
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
-  flex-grow: 1;
+  list-style-type: none;
+  padding: 0;
 }
 
-nav li {
-  margin: 0 1rem;
+nav ul li {
+  display: inline;
+  margin: 0 5em; /* Adjust as needed */
 }
 
-nav a {
-  color: white;
+nav ul li a {
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: black; /* Adjust as needed */
 }
 
-nav.navbar {
-  height: 80px;
-  padding: 15px 0;
-  background-color: black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-brand img {
-  height: 60px; /* set the desired height of the logo */
-  margin-top: 15px;
-  margin-right: 10px; /* add some spacing between the logo and the navbar links */
-}
-
-
-nav.navbar a.navbar-brand {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+nav ul li :hover {
+  text-decoration: underline;
   text-transform: uppercase;
 }
 
-nav.navbar a.nav-link {
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+/* Carousel section styles */
+#carousel {
+  width: 80%;
+  height: 50vh;
+  position: relative;
+  margin: 0 auto;
 }
 
-nav.navbar a.nav-link:hover {
-  border-bottom: 3px solid white;
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 3s;
 }
 
-nav.navbar.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-}
-
-/* Hero section styles */
-#hero {
-  background-image:url(./images/Modern_Design_Kitchen.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-#hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+/* Hero section styles*/
+#about {
+  margin-top: 200px; /* Adjust as needed */
+  margin-bottom: 200px; /* Adjust as needed */
   text-align: center;
 }
 
-#hero p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  max-width: 600px;
+#about h2 {
+  margin-bottom: 20px; /* Adjust as needed */
 }
+
+#about p {
+  max-width: 800px; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Services section styles */
 #services {

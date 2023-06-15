@@ -5,37 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>H & H Interiors</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat:wght@500&family=Handlee&family=Poppins:wght@600&family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="House & Home logo">
-      </a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+    <div class="logo-container">
+        <img src="/images/logo.png" alt="House & Home Logo" class="logo">
+        <h1 class="company-name">H & H Interiors</h1>
+        <h2>Designing Your Unique Kitchen</h2>
+    </div>
+    <nav class="nav-link-container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-      </div>
     </nav>
   </header>
+
   
   <main>
-    <section id="hero">
-      <h1>Welcome to Our Kitchen Design Website</h1>
-      <p>We are a professional kitchen design business specializing in custom kitchens, kitchen remodels, and kitchen renovations. Browse our portfolio to see some of our recent work.</p>
-      <a href="#" class="btn">View Portfolio</a>
+    <section id="carousel">
+      <img src="/images/Dark_Blue_Kitchen_With_Island.webp" class="carousel-image">
+      <img src="/images/Modern_Design_Kitchen.jpg" class="carousel-image" style="display: none;">
+      <img src="/images/Ultra_Sleek_Kitchen.jpg" class="carousel-image" style="display: none;">
+        <!-- Add more images as needed -->
+    </section>
+    <section id="about">
+      <h2>A little about us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero mi,
+        dictum ac lacinia non, ullamcorper eu diam. 
+        Vestibulum rhoncus accumsan dui, sit amet consectetur tellus hendrerit eleifend. 
+        Maecenas vel est lorem. Donec a turpis sed leo suscipit pulvinar. 
+        Orci varius natoque penatibus et magnis dis parturient montes, 
+        nascetur ridiculus.
+      </p>
     </section>
     <section id="services">
       <h2>Our Services</h2>
